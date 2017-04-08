@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="location">50dp</dimen>
+    <dimen name="checkbox_margin1_por">30dp</dimen>
+    <dimen name="checkbox_margin1_lan">45dp</dimen>
+    <dimen name="checkbox_margin2">100dp</dimen>
+    <dimen name="checkbox_margin3">100dp</dimen>
+    <dimen name="checkbox_margin4">300dp</dimen>
+    <dimen name="checkbox_margin5">450dp</dimen>
+</resources>
