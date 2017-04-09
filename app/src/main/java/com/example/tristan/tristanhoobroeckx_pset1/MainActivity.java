@@ -24,7 +24,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Get our saved instance
         super.onCreate(savedInstanceState);
+
+        // If it isn't nothing, recreate the saved state
         if(savedInstanceState != null){
             State = savedInstanceState.getString(STATE_KEY);
         }
@@ -45,10 +48,14 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onSaveInstanceState(Bundle outState){
+        // Calling the super is supposed to save my views
         super.onSaveInstanceState(outState);
+        // This is where I save my own state
         outState.putString(STATE_KEY, State);
     }
-
+/* Method to make visible or invisible some imageviews by checking which corresponding button was
+   pressed.
+   */
     public void onClickCheckbox (View view){
         boolean checked = ((CheckBox) view).isChecked();
 
