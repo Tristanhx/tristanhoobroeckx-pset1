@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
     private View mImageViewMustache;
     private View mImageViewNose;
     private View mImageViewShoes;
-    private String State;
     private static final String STATE_KEY = "savestate";
+    private String State;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onSaveInstanceState(Bundle outState){
-        outState.putString(STATE_KEY, State);
         super.onSaveInstanceState(outState);
+        outState.putString(STATE_KEY, State);
     }
 
     public void onClickCheckbox (View view){
