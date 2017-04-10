@@ -20,8 +20,17 @@ public class MainActivity extends AppCompatActivity {
     private View mImageViewNose = (View) findViewById(R.id.nose);
     private View mImageViewShoes = (View) findViewById(R.id.shoes);
 
-    private static final String STATE_KEY = "savestate";
-    private String State;
+    private String STATE_KEY_Arms = "arms";
+    private String STATE_KEY_Ears = "ears";
+    private String STATE_KEY_Eyeb = "eyeb";
+    private String STATE_KEY_Eyes = "eyes";
+    private String STATE_KEY_Glas = "glas";
+    private String STATE_KEY_Hat = "hat";
+    private String STATE_KEY_Mouth = "mouth";
+    private String STATE_KEY_Musta = "musta";
+    private String STATE_KEY_Nose = "nose";
+    private String STATE_KEY_Shoes = "shoes";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +39,36 @@ public class MainActivity extends AppCompatActivity {
 
         // If it isn't nothing, recreate the saved state
         if(savedInstanceState != null){
-            State = savedInstanceState.getString(STATE_KEY);
-        }
+            if (savedInstanceState.getInt(STATE_KEY_Arms) == 0){
+                mImageViewArms.setVisibility(View.VISIBLE);
+            }
+            if (savedInstanceState.getInt(STATE_KEY_Ears) == 0){
+                mImageViewEars.setVisibility(View.VISIBLE);
+            }
+            if (savedInstanceState.getInt(STATE_KEY_Eyeb) == 0){
+                mImageViewEyebrows.setVisibility(View.VISIBLE);
+            }
+            if (savedInstanceState.getInt(STATE_KEY_Eyes) == 0){
+                mImageViewEyes.setVisibility(View.VISIBLE);
+            }
+            if (savedInstanceState.getInt(STATE_KEY_Glas) == 0){
+                mImageViewGlasses.setVisibility(View.VISIBLE);
+            }
+            if (savedInstanceState.getInt(STATE_KEY_Hat) == 0){
+                mImageViewHat.setVisibility(View.VISIBLE);
+            }
+            if (savedInstanceState.getInt(STATE_KEY_Mouth) == 0){
+                mImageViewMouth.setVisibility(View.VISIBLE);
+            }
+            if (savedInstanceState.getInt(STATE_KEY_Musta) == 0){
+                mImageViewMustache.setVisibility(View.VISIBLE);
+            }
+            if (savedInstanceState.getInt(STATE_KEY_Nose) == 0){
+                mImageViewNose.setVisibility(View.VISIBLE);
+            }
+            if (savedInstanceState.getInt(STATE_KEY_Shoes) == 0){
+                mImageViewShoes.setVisibility(View.VISIBLE);
+            }
         setContentView(R.layout.activity_main);
     }
 
@@ -40,10 +77,19 @@ public class MainActivity extends AppCompatActivity {
         // Calling the super is supposed to save my views
         super.onSaveInstanceState(outState);
         // This is where I save my own state
-        outState.putString(STATE_KEY, State);
+        outState.putInt(STATE_KEY_Arms, mImageViewArms.getVisibility());
+        outState.putInt(STATE_KEY_Ears, mImageViewEars.getVisibility());
+        outState.putInt(STATE_KEY_Eyeb, mImageViewEyebrows.getVisibility());
+        outState.putInt(STATE_KEY_Eyes, mImageViewEyes.getVisibility());
+        outState.putInt(STATE_KEY_Glas, mImageViewGlasses.getVisibility());
+        outState.putInt(STATE_KEY_Hat, mImageViewHat.getVisibility());
+        outState.putInt(STATE_KEY_Mouth, mImageViewMouth.getVisibility());
+        outState.putInt(STATE_KEY_Musta, mImageViewMustache.getVisibility());
+        outState.putInt(STATE_KEY_Nose, mImageViewNose.getVisibility());
+        outState.putInt(STATE_KEY_Shoes, mImageViewShoes.getVisibility());
     }
 /* Method to make visible or invisible some imageviews by checking which corresponding button was
-   pressed.
+   checked.
    */
     public void onClickCheckbox (View view){
         boolean checked = ((CheckBox) view).isChecked();
