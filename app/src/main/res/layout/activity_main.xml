@@ -180,6 +180,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="@dimen/checkbox_margin3"
                 android:layout_marginBottom="@dimen/checkbox_margin1_por"
+                android:buttonTint="@color/CHECK_COLOR"
                 android:onClick="onClickCheckbox" />
 
             <CheckBox
@@ -190,6 +191,7 @@
                 android:layout_below="@id/checkBox_arms"
                 android:layout_marginLeft="@dimen/checkbox_margin3"
                 android:layout_marginBottom="@dimen/checkbox_margin1_por"
+                android:buttonTint="@color/CHECK_COLOR"
                 android:onClick="onClickCheckbox" />
 
             <CheckBox
@@ -200,6 +202,7 @@
                 android:layout_marginLeft="@dimen/checkbox_margin3"
                 android:layout_below="@id/checkBox_ears"
                 android:layout_marginBottom="@dimen/checkbox_margin1_por"
+                android:buttonTint="@color/CHECK_COLOR"
                 android:onClick="onClickCheckbox" />
 
             <CheckBox
@@ -210,6 +213,7 @@
                 android:layout_marginLeft="@dimen/checkbox_margin3"
                 android:layout_below="@id/checkBox_eyebrows"
                 android:layout_marginBottom="@dimen/checkbox_margin1_por"
+                android:buttonTint="@color/CHECK_COLOR"
                 android:onClick="onClickCheckbox" />
 
             <CheckBox
@@ -220,6 +224,7 @@
                 android:layout_marginLeft="@dimen/checkbox_margin3"
                 android:layout_below="@id/checkBox_eyes"
                 android:layout_marginBottom="@dimen/checkbox_margin1_por"
+                android:buttonTint="@color/CHECK_COLOR"
                 android:onClick="onClickCheckbox" />
 
             <CheckBox
@@ -230,6 +235,7 @@
                 android:layout_toRightOf="@+id/checkBox_arms"
                 android:layout_marginLeft="@dimen/checkbox_margin2"
                 android:layout_marginBottom="@dimen/checkbox_margin1_por"
+                android:buttonTint="@color/CHECK_COLOR"
                 android:onClick="onClickCheckbox" />
 
             <CheckBox
@@ -241,6 +247,7 @@
                 android:layout_below="@+id/checkBox_hat"
                 android:layout_marginLeft="@dimen/checkbox_margin2"
                 android:layout_marginBottom="@dimen/checkbox_margin1_por"
+                android:buttonTint="@color/CHECK_COLOR"
                 android:onClick="onClickCheckbox" />
 
             <CheckBox
@@ -252,6 +259,7 @@
                 android:layout_below="@+id/checkBox_mouth"
                 android:layout_marginLeft="@dimen/checkbox_margin2"
                 android:layout_marginBottom="@dimen/checkbox_margin1_por"
+                android:buttonTint="@color/CHECK_COLOR"
                 android:onClick="onClickCheckbox" />
 
             <CheckBox
@@ -263,6 +271,7 @@
                 android:layout_below="@+id/checkBox_mustache"
                 android:layout_marginLeft="@dimen/checkbox_margin2"
                 android:layout_marginBottom="@dimen/checkbox_margin1_por"
+                android:buttonTint="@color/CHECK_COLOR"
                 android:onClick="onClickCheckbox" />
 
             <CheckBox
@@ -274,6 +283,7 @@
                 android:layout_below="@+id/checkBox_nose"
                 android:layout_marginLeft="@dimen/checkbox_margin2"
                 android:layout_marginBottom="@dimen/checkbox_margin1_por"
+                android:buttonTint="@color/CHECK_COLOR"
                 android:onClick="onClickCheckbox" />
         </RelativeLayout>
     </LinearLayout>
