@@ -50,74 +50,64 @@ public class MainActivity extends AppCompatActivity {
 
         switch(view.getId()){
             case R.id.checkBox_arms:
-                View imgview_arms = (View) findViewById(R.id.arms);
                 if (checked)
-                    imgview_arms.setVisibility(View.VISIBLE);
+                    mImageViewArms.setVisibility(View.VISIBLE);
                 else
-                    imgview_arms.setVisibility(View.INVISIBLE);
+                    mImageViewArms.setVisibility(View.INVISIBLE);
                 break;
             case R.id.checkBox_ears:
-                View imgview_ears = (View) findViewById(R.id.ears);
                 if (checked)
-                    imgview_ears.setVisibility(View.VISIBLE);
+                    mImageViewEars.setVisibility(View.VISIBLE);
                 else
-                    imgview_ears.setVisibility(View.INVISIBLE);
+                    mImageViewEars.setVisibility(View.INVISIBLE);
                 break;
             case R.id.checkBox_eyebrows:
-                View imgview_eyebrows = (View) findViewById(R.id.eyebrows);
                 if (checked)
-                    imgview_eyebrows.setVisibility(View.VISIBLE);
+                    mImageViewEyebrows.setVisibility(View.VISIBLE);
                 else
-                    imgview_eyebrows.setVisibility(View.INVISIBLE);
+                    mImageViewEyebrows.setVisibility(View.INVISIBLE);
                 break;
             case R.id.checkBox_eyes:
-                View imgview_eyes = (View) findViewById(R.id.eyes);
                 if (checked)
-                    imgview_eyes.setVisibility(View.VISIBLE);
+                    mImageViewEyes.setVisibility(View.VISIBLE);
                 else
-                    imgview_eyes.setVisibility(View.INVISIBLE);
+                    mImageViewEyes.setVisibility(View.INVISIBLE);
                 break;
             case R.id.checkBox_glasses:
-                View imgview_glasses = (View) findViewById(R.id.glasses);
                 if (checked)
-                    imgview_glasses.setVisibility(View.VISIBLE);
+                    mImageViewGlasses.setVisibility(View.VISIBLE);
                 else
-                    imgview_glasses.setVisibility(View.INVISIBLE);
+                    mImageViewGlasses.setVisibility(View.INVISIBLE);
                 break;
             case R.id.checkBox_hat:
-                View imgview_hat = (View) findViewById(R.id.hat);
                 if (checked)
-                    imgview_hat.setVisibility(View.VISIBLE);
+                    mImageViewHat.setVisibility(View.VISIBLE);
                 else
-                    imgview_hat.setVisibility(View.INVISIBLE);
+                    mImageViewHat.setVisibility(View.INVISIBLE);
                 break;
             case R.id.checkBox_mouth:
-                View imgview_mouth = (View) findViewById(R.id.mouth);
                 if (checked)
-                    imgview_mouth.setVisibility(View.VISIBLE);
+                    mImageViewMouth.setVisibility(View.VISIBLE);
                 else
-                    imgview_mouth.setVisibility(View.INVISIBLE);
+                    mImageViewMouth.setVisibility(View.INVISIBLE);
                 break;
             case R.id.checkBox_mustache:
-                View imgview_mustache = (View) findViewById(R.id.mustache);
                 if (checked)
-                    imgview_mustache.setVisibility(View.VISIBLE);
+                    mImageViewMustache.setVisibility(View.VISIBLE);
                 else
-                    imgview_mustache.setVisibility(View.INVISIBLE);
+                    mImageViewMustache.setVisibility(View.INVISIBLE);
                 break;
             case R.id.checkBox_nose:
-                View imgview_nose = (View) findViewById(R.id.nose);
                 if (checked)
-                    imgview_nose.setVisibility(View.VISIBLE);
+                    mImageViewNose.setVisibility(View.VISIBLE);
                 else
-                    imgview_nose.setVisibility(View.INVISIBLE);
+                    mImageViewNose.setVisibility(View.INVISIBLE);
                 break;
             case R.id.checkBox_shoes:
-                View imgview_shoes = (View) findViewById(R.id.shoes);
                 if (checked)
-                    imgview_shoes.setVisibility(View.VISIBLE);
+                    mImageViewShoes.setVisibility(View.VISIBLE);
                 else
-                    imgview_shoes.setVisibility(View.INVISIBLE);
+                    mImageViewShoes.setVisibility(View.INVISIBLE);
                 break;
 
             }
