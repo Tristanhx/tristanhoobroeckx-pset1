@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         // Get our saved instance
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_main);
         // If it isn't nothing, recreate the saved state
         if(savedInstanceState != null){
             if (savedInstanceState.getInt(STATE_KEY_Arms) == 0){
@@ -69,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
             if (savedInstanceState.getInt(STATE_KEY_Shoes) == 0){
                 mImageViewShoes.setVisibility(View.VISIBLE);
             }
-        setContentView(R.layout.activity_main);
     }
 
     @Override
