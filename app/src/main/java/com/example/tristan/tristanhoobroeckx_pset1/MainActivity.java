@@ -7,6 +7,18 @@ import android.widget.CheckBox;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Views
+    private View mImageViewArms;
+    private View mImageViewEars;
+    private View mImageViewEyebrows;
+    private View mImageViewEyes;
+    private View mImageViewGlasses;
+    private View mImageViewHat;
+    private View mImageViewMouth;
+    private View mImageViewMustache;
+    private View mImageViewNose;
+    private View mImageViewShoes;
+
     // Keys
     private String STATE_KEY_Arms = "arms";
     private String STATE_KEY_Ears = "ears";
@@ -24,9 +36,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         // Get our saved instance
         super.onCreate(savedInstanceState);
-
         // Set the layout
         setContentView(R.layout.activity_main);
+
+        mImageViewArms = (View) findViewById(R.id.arms);
+        mImageViewEars = (View) findViewById(R.id.ears);
+        mImageViewEyebrows = (View) findViewById(R.id.eyebrows);
+        mImageViewEyes = (View) findViewById(R.id.eyes);
+        mImageViewGlasses = (View) findViewById(R.id.glasses);
+        mImageViewHat = (View) findViewById(R.id.hat);
+        mImageViewMouth = (View) findViewById(R.id.mouth);
+        mImageViewMustache = (View) findViewById(R.id.mustache);
+        mImageViewNose = (View) findViewById(R.id.nose);
+        mImageViewShoes = (View) findViewById(R.id.shoes);
+
 
         // If something is stored in savedInstanceState, recreate the saved state
         if (savedInstanceState != null) {
@@ -98,18 +121,6 @@ public class MainActivity extends AppCompatActivity {
         outState.putInt(STATE_KEY_Nose, mImageViewNose.getVisibility());
         outState.putInt(STATE_KEY_Shoes, mImageViewShoes.getVisibility());
     }
-
-    // Views
-    private View mImageViewArms = (View) findViewById(R.id.arms);
-    private View mImageViewEars = (View) findViewById(R.id.ears);
-    private View mImageViewEyebrows = (View) findViewById(R.id.eyebrows);
-    private View mImageViewEyes = (View) findViewById(R.id.eyes);
-    private View mImageViewGlasses = (View) findViewById(R.id.glasses);
-    private View mImageViewHat = (View) findViewById(R.id.hat);
-    private View mImageViewMouth = (View) findViewById(R.id.mouth);
-    private View mImageViewMustache = (View) findViewById(R.id.mustache);
-    private View mImageViewNose = (View) findViewById(R.id.nose);
-    private View mImageViewShoes = (View) findViewById(R.id.shoes);
 
 /* Method to make visible or invisible some imageviews by checking which corresponding button was
    checked.
