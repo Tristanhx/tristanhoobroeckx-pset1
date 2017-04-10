@@ -8,17 +8,18 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private View mImageViewArms;
-    private View mImageViewBody;
-    private View mImageViewEars;
-    private View mImageViewEyebrows;
-    private View mImageViewEyes;
-    private View mImageViewGlasses;
-    private View mImageViewHat;
-    private View mImageViewMouth;
-    private View mImageViewMustache;
-    private View mImageViewNose;
-    private View mImageViewShoes;
+    private View mImageViewArms = (View) findViewById(R.id.arms);
+    private View mImageViewBody = (View) findViewById(R.id.body);
+    private View mImageViewEars = (View) findViewById(R.id.ears);
+    private View mImageViewEyebrows = (View) findViewById(R.id.eyebrows);
+    private View mImageViewEyes = (View) findViewById(R.id.eyes);
+    private View mImageViewGlasses = (View) findViewById(R.id.glasses);
+    private View mImageViewHat = (View) findViewById(R.id.hat);
+    private View mImageViewMouth = (View) findViewById(R.id.mouth);
+    private View mImageViewMustache = (View) findViewById(R.id.mustache);
+    private View mImageViewNose = (View) findViewById(R.id.nose);
+    private View mImageViewShoes = (View) findViewById(R.id.shoes);
+
     private static final String STATE_KEY = "savestate";
     private String State;
 
@@ -32,18 +33,6 @@ public class MainActivity extends AppCompatActivity {
             State = savedInstanceState.getString(STATE_KEY);
         }
         setContentView(R.layout.activity_main);
-
-        mImageViewArms = (View) findViewById(R.id.arms);
-        mImageViewBody = (View) findViewById(R.id.body);
-        mImageViewEars = (View) findViewById(R.id.ears);
-        mImageViewEyebrows = (View) findViewById(R.id.eyebrows);
-        mImageViewEyes = (View) findViewById(R.id.eyes);
-        mImageViewGlasses = (View) findViewById(R.id.glasses);
-        mImageViewHat = (View) findViewById(R.id.hat);
-        mImageViewMouth = (View) findViewById(R.id.mouth);
-        mImageViewMustache = (View) findViewById(R.id.mustache);
-        mImageViewNose = (View) findViewById(R.id.nose);
-        mImageViewShoes = (View) findViewById(R.id.shoes);
     }
 
     @Override
