@@ -8,28 +8,15 @@ import android.widget.CheckBox;
 public class MainActivity extends AppCompatActivity {
 
     // Views
-    private View mImageViewArms;
-    private View mImageViewEars;
-    private View mImageViewEyebrows;
-    private View mImageViewEyes;
-    private View mImageViewGlasses;
-    private View mImageViewHat;
-    private View mImageViewMouth;
-    private View mImageViewMustache;
-    private View mImageViewNose;
-    private View mImageViewShoes;
+    private View mImageViewArms, mImageViewEars, mImageViewEyebrows, mImageViewEyes,
+            mImageViewGlasses, mImageViewHat, mImageViewMouth, mImageViewMustache, mImageViewNose,
+            mImageViewShoes;
 
     // Keys
-    private String STATE_KEY_Arms = "arms";
-    private String STATE_KEY_Ears = "ears";
-    private String STATE_KEY_Eyeb = "eyeb";
-    private String STATE_KEY_Eyes = "eyes";
-    private String STATE_KEY_Glas = "glas";
-    private String STATE_KEY_Hat = "hat";
-    private String STATE_KEY_Mouth = "mouth";
-    private String STATE_KEY_Musta = "musta";
-    private String STATE_KEY_Nose = "nose";
-    private String STATE_KEY_Shoes = "shoes";
+    private String STATE_KEY_Arms = "arms", STATE_KEY_Ears = "ears", STATE_KEY_Eyeb = "eyeb",
+            STATE_KEY_Eyes = "eyes", STATE_KEY_Glas = "glas", STATE_KEY_Hat = "hat",
+            STATE_KEY_Mouth = "mouth", STATE_KEY_Musta = "musta", STATE_KEY_Nose = "nose",
+            STATE_KEY_Shoes = "shoes";
 
 
     @Override
@@ -56,49 +43,30 @@ public class MainActivity extends AppCompatActivity {
             if (savedInstanceState.getInt(STATE_KEY_Arms) == 0) {
                 mImageViewArms.setVisibility(View.VISIBLE);
             }
-        }
-
-        if (savedInstanceState != null) {
             if (savedInstanceState.getInt(STATE_KEY_Ears) == 0) {
                 mImageViewEars.setVisibility(View.VISIBLE);
             }
-        }
-        if (savedInstanceState != null) {
             if (savedInstanceState.getInt(STATE_KEY_Eyeb) == 0) {
                 mImageViewEyebrows.setVisibility(View.VISIBLE);
             }
-        }
-        if (savedInstanceState != null) {
             if (savedInstanceState.getInt(STATE_KEY_Eyes) == 0) {
                 mImageViewEyes.setVisibility(View.VISIBLE);
             }
-        }
-        if (savedInstanceState != null) {
             if (savedInstanceState.getInt(STATE_KEY_Glas) == 0) {
                 mImageViewGlasses.setVisibility(View.VISIBLE);
             }
-        }
-        if (savedInstanceState != null) {
             if (savedInstanceState.getInt(STATE_KEY_Hat) == 0) {
                 mImageViewHat.setVisibility(View.VISIBLE);
             }
-        }
-        if (savedInstanceState != null) {
             if (savedInstanceState.getInt(STATE_KEY_Mouth) == 0) {
                 mImageViewMouth.setVisibility(View.VISIBLE);
             }
-        }
-        if (savedInstanceState != null) {
             if (savedInstanceState.getInt(STATE_KEY_Musta) == 0) {
                 mImageViewMustache.setVisibility(View.VISIBLE);
             }
-        }
-        if (savedInstanceState != null) {
             if (savedInstanceState.getInt(STATE_KEY_Nose) == 0) {
                 mImageViewNose.setVisibility(View.VISIBLE);
             }
-        }
-        if (savedInstanceState != null) {
             if (savedInstanceState.getInt(STATE_KEY_Shoes) == 0) {
                 mImageViewShoes.setVisibility(View.VISIBLE);
             }
@@ -122,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         outState.putInt(STATE_KEY_Shoes, mImageViewShoes.getVisibility());
     }
 
-/* Method to make visible or invisible some imageviews by checking which corresponding button was
+/* Method to make visible or invisible some ImageViews by checking which corresponding button was
    checked.
    */
     public void onClickCheckbox (View view){
