@@ -26,16 +26,16 @@ public class MainActivity extends AppCompatActivity {
         // Set the layout
         setContentView(R.layout.activity_main);
 
-        mImageViewArms = (View) findViewById(R.id.arms);
-        mImageViewEars = (View) findViewById(R.id.ears);
-        mImageViewEyebrows = (View) findViewById(R.id.eyebrows);
-        mImageViewEyes = (View) findViewById(R.id.eyes);
-        mImageViewGlasses = (View) findViewById(R.id.glasses);
-        mImageViewHat = (View) findViewById(R.id.hat);
-        mImageViewMouth = (View) findViewById(R.id.mouth);
-        mImageViewMustache = (View) findViewById(R.id.mustache);
-        mImageViewNose = (View) findViewById(R.id.nose);
-        mImageViewShoes = (View) findViewById(R.id.shoes);
+        mImageViewArms = findViewById(R.id.arms);
+        mImageViewEars =  findViewById(R.id.ears);
+        mImageViewEyebrows = findViewById(R.id.eyebrows);
+        mImageViewEyes = findViewById(R.id.eyes);
+        mImageViewGlasses = findViewById(R.id.glasses);
+        mImageViewHat = findViewById(R.id.hat);
+        mImageViewMouth = findViewById(R.id.mouth);
+        mImageViewMustache = findViewById(R.id.mustache);
+        mImageViewNose = findViewById(R.id.nose);
+        mImageViewShoes = findViewById(R.id.shoes);
 
 
         // If something is stored in savedInstanceState, recreate the saved state
